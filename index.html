@@ -28,19 +28,26 @@
         <div class="card" style="width: 30rem;">
             <img src="/img/blackPencil.jpg" class="card-img-top">
 
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-info" id="progressBar" role="progressbar" style="width: 100%"
+                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
 
             <div class="card-body" id="endScreen" style="display: none;">
-                <div>
+                <div class="quiz-end">
                     Quiz beendet!
                 </div>
 
-                <div><img src="/img/tropy.png"></div>
-
-
-                <div>
-                    Du hast XXX Fragen von XXX richtig beantwortet!
+                <div class="game-end-info">
+                    <div class="amount-end">
+                        Du hast <b id="amountOfRightAnswers">XXX</b> Fragen von <b id="question-numbers-again">XXX</b>
+                        richtig beantwortet!
+                    </div>
+                    <div class="image-end">
+                        <img src="/img/tropy.png">
+                    </div>
                 </div>
-
+                <button class="btn btn-outline-success" onclick="restartGame()">Restart Game</button>
             </div>
 
             <div class="card-body" id="questionBody">
@@ -74,7 +81,8 @@
                     <span>
                         <b id="numberOfQuestions">1</b> von <b id="question-numbers"></b> Fragen
                     </span>
-                    <button class="btn btn-outline-success" id="next-button" onclick="nextQuestion()" disabled>Nächste Frage</button>
+                    <button class="btn btn-outline-success" id="next-button" onclick="nextQuestion()" disabled>Nächste
+                        Frage</button>
                 </div>
 
             </div>

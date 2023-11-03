@@ -19,9 +19,19 @@ body {
 }
 
 .quiz-answer-card:hover {
-    cursor: pointer;
-    background-color: rgba(197, 197, 197, 0.4);
+  cursor: pointer;
+  background-color: rgba(197, 197, 197, 0.4);
 }
-.bg-success, .bg-danger{
+.bg-success, .bg-danger {
   color: white !important;
+}
+
+.quiz-end {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.game-end-info{
+  display: flex;
+  align-items: center;
 }
